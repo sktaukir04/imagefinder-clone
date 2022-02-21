@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editsearch"
+            android:layout_width="0dp"
+            android:layout_weight="1.9"
+            android:maxLength="20"
+            android:imeOptions="actionSearch"
+            android:drawableLeft="@drawable/search"
+            android:singleLine="true"
+            android:inputType="textImeMultiLine"
+            android:textColor="@color/black"
+            android:textColorHint="#8EE12B"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:lines="1"
+            android:hint="Search Anything"
+
+            android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_alignRight="@+id/editsearch"
+                android:id="@+id/searchimg"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.2"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"/>
+
+
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>
